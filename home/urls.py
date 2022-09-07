@@ -1,4 +1,4 @@
-import imp
+
 
 from django.contrib import admin
 from django.urls import path
@@ -6,5 +6,8 @@ from django.urls import path
 from home import views
 
 urlpatterns = [
-    path("", views.index, name='home')
+    path("", views.index, name='home'),
+    path("about", views.about, name='about'),
+    path("services", views.servies, name='servies'),
+    path("contact", views.contact, name='contact'),
 ]
